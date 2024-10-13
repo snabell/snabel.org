@@ -1,0 +1,126 @@
+*{
+    scroll-behavior: smooth;
+}
+
+.HomeSection{
+height: 110vh;
+width: 100%;
+display: flex;
+align-items: center;
+align-content: center;
+justify-content: space-around;
+background-image:url("../../img/home.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+transition: 1000ms ease-in-out;
+
+
+}
+.ImgHome{
+width: 360px;
+animation: MoveHomeImg 5s linear infinite;
+}
+@keyframes MoveHomeImg {
+0% {
+transform: translateY(5px);
+
+} 
+50% {
+transform: translateY(-20px);
+opacity: 1;
+}
+100% {
+    transform: translateY(5px);
+
+    }
+}
+.TextHome{
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    gap: 25px;
+    width: 500px;
+
+}
+
+.HiHome{
+    font-size: 6rem;
+    color: aliceblue;
+
+}
+.praHome{
+    font-size: 1.7rem;
+    color: #ffff;
+    /*bg-c-p*/
+    background-color: var(--bgcp);
+    padding: 7px 12px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-top: 4px solid #fff;
+    border-right: 4px solid #fff;
+
+    
+
+}
+.btnHome{
+    width: 200px;
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    color: aliceblue;
+    background-color: var(--Secondry-Color);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s linear;
+}
+.btnHome:hover{
+    background-color: black;
+}
+
+.secText{
+    display: inline-flex;
+    color: rgb(255, 255, 255);
+    font-size: 45px;
+
+}
+.relaHome{
+    color: aliceblue;
+}
+
+.selec{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+.chooseP{
+    padding: 7px 12px;
+    border: 2px solid #fff;
+    /*bgct*/
+    background-color: var(--bgct);
+    border-radius: 25px;
+    font-size: 25px;
+    color: #fff;
+    transition: 0.2s linear;
+    width: 200px;
+    text-align: center;
+}
+
+.chooseP:hover{
+    border: 2px solid #FF9100;
+    background-color: #FF9100;
+    border-radius: 25px;
+    font-size: 25px;
+    color: #fff;
+}
+.who{
+    color: #ffff;
+    background-color: var(--bgcp);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom: 5px solid white;
+    border-right: 5px solid #fff;
+    padding: 5px 10px;
+    width: 140px;
+}

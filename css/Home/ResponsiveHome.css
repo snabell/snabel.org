@@ -1,0 +1,147 @@
+@media (max-width: 700px) {
+    .HomeSection{
+        height: 110vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        flex-direction: column-reverse;
+        background-image:"url('./img/home1.jpg')";
+        background-repeat: no-repeat;
+        background-size: cover;
+        transition: 1000ms ease-in-out;
+        background-color: rgb(13, 50, 83);
+        gap: 4rem;
+        }
+        .ImgHome{
+        width: 170px;
+        animation: MoveHomeImg 5s linear infinite;
+        }
+        @keyframes MoveHomeImg {
+        0% {
+        transform: translateY(7px);
+        
+        } 
+        50% {
+        transform: translateY(-20px);
+        opacity: 1;
+        }
+        100% {
+            transform: translateY(7px);
+        
+            }
+        }
+        .TextHome{
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+            gap: 25px;
+            width: 260px;
+        
+        }
+        
+        .HiHome{
+            font-size: 3rem;
+            margin-top: 10px;
+        }
+        .praHome{
+            font-size: 23px;
+            line-height: 25px;
+        }
+        .btnHome{
+            width: 170px;
+            font-size: 15px;
+        }
+
+        .secText{
+            font-size: 22px;
+
+}
+.chooseP{
+
+    font-size: 20px;
+
+}
+.chooseP:hover{
+
+    font-size: 20px;
+
+}
+}
+
+@media (min-width: 700px) and (max-width: 1000px) {
+    .HomeSection{
+        height: 110vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: space-around;
+        background-image:"url('./img/home1.jpg')";
+        background-repeat: no-repeat;
+        background-size: cover;
+        transition: 1000ms ease-in-out;
+        background-color: rgb(13, 50, 83);
+        }
+        .ImgHome{
+        width: 200px;
+        animation: MoveHomeImg 5s linear infinite;
+        }
+        @keyframes MoveHomeImg {
+        0% {
+        transform: translateY(7px);
+        
+        } 
+        50% {
+        transform: translateY(-20px);
+        opacity: 1;
+        }
+        100% {
+            transform: translateY(7px);
+        
+            }
+        }
+        .TextHome{
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            gap: 25px;
+            width: 260px;
+        
+        }
+        
+        .HiHome{
+            font-size: 3rem;
+            margin-top: 10px;
+        }
+        .praHome{
+            font-size: 13px;
+            line-height: 25px;
+ 
+        }
+        .btnHome{
+            width: 170px;
+            font-size: 15px;
+        }
+
+        .secText{
+            font-size: 22px;
+
+}
+
+.chooseP{
+
+    font-size: 20px;
+}
+.chooseP:hover{
+
+    font-size: 20px;
+
+}
+}

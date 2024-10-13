@@ -1,0 +1,101 @@
+/*General Setting*/
+*{
+list-style: none; text-decoration:none; box-sizing: border-box;
+margin: 0; padding: 0;
+    font-family: "Lalezar", system-ui;
+    font-weight: 400;
+    font-style: normal;
+
+  
+}
+/*Website Colors*/
+:root{
+--primary-Color: rgb(21, 111, 34); --Secondry-Color: #00712D; --Third-Color:rgb(238, 0, 255);
+--bgcp:rgb(214, 94, 8); --bgct:#00712d;
+}
+/*Dark Mode*/
+.dark-theme{
+--primary-Color: rgb(28, 22, 22); --Secondry-Color: rgb(15, 15, 15); --Third-Color:rgb(238, 232, 238);
+--bgcp:rgb(27, 25, 24);--bgct:#0f130f;
+}
+/*Navbar*/
+.Any-navbar-1{
+display: flex; justify-content: space-around; align-items: center;
+background-color: transparent; padding: 30px 70px;
+position: fixed; width: 100%; height:70px ;
+transition: 0.4s linear; z-index: 1000;
+}
+/*Animation Scrolled JS*/
+.Any-navbar-1.scrolled{
+background-color: var(--Secondry-Color);
+box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+/*ul*/
+.nav-link-ul-3{
+display: flex; gap: 40px;
+font-size: 25px; font-weight: bold; color: white; 
+}
+/*li*/
+.nav-link-ul-3 li{
+color: white; transition: 0.2s linear;
+}
+.nav-link-ul-3 li:hover{
+color: #FF9100;
+}
+/*Logo*/
+.Any-logo-2{
+font-size: 40px; font-weight: bold; color: white; 
+}
+/*menu*/
+.bx-menu{
+    font-size: 35px;
+    color: #fff;
+    display: none;
+}
+/*Start Design btn log-in*/
+.login-nav-btn-4 {
+position: relative; padding: 10px 15px; border-radius: 7px;
+border: 1px solid rgb(227, 229, 235);
+font-size: 19px; text-transform: uppercase; font-weight: 600; letter-spacing: 2px; background: transparent;
+color: #fff; overflow: hidden; box-shadow: 0 0 0 0 transparent;
+-webkit-transition: all 0.2s ease-in; -moz-transition: all 0.2s ease-in; transition: all 0.2s ease-in;
+}
+.login-nav-btn-4:hover {
+background: #288506; box-shadow: 0 0 30px 5px rgba(79, 236, 0, 0.815);
+-webkit-transition: all 0.2s ease-out; -moz-transition: all 0.2s ease-out; transition: all 0.2s ease-out;
+}
+.login-nav-btn-4:hover::before {
+-webkit-animation: sh02 0.5s 0s linear; -moz-animation: sh02 0.5s 0s linear; animation: sh02 0.5s 0s linear;
+}
+.login-nav-btn-4::before {
+content: ''; display: block; width: 0px; height: 86%; position: absolute;
+top: 7%; left: 0%; opacity: 0; background: #fff; box-shadow: 0 0 50px 30px #fff;
+-webkit-transform: skewX(-20deg); -moz-transform: skewX(-20deg);
+-ms-transform: skewX(-20deg); -o-transform: skewX(-20deg); transform: skewX(-20deg);
+}
+@keyframes sh02 {
+from {
+opacity: 0;
+left: 0%;
+}
+50%{
+opacity: 1;
+}  
+to {
+opacity: 0;
+left: 100%;
+}
+}
+.login-nav-btn-4:active {
+box-shadow: 0 0 0 0 transparent; -webkit-transition: box-shadow 0.2s ease-in;
+-moz-transition: box-shadow 0.2s ease-in; transition: box-shadow 0.2s ease-in;
+}
+/*end Design btn logIn*/
+/*Switch Mode*/
+.chhmode-5{
+width: 30px; cursor: pointer;
+}
+.chhmode-5:active {
+transform: scale(0.9);
+}
+/*End for Big Screen*/

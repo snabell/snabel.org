@@ -1,0 +1,101 @@
+:root{
+    --cssgr1:rgb(226, 245, 231);
+    --cssgr2:rgb(214, 236, 192);
+    --msg:rgb(12 20 13);
+    --prasec:black;
+    --bxsimg:rgba(0, 0, 0, 0.4);
+    --two:rgb(213, 247, 219);
+    --one:rgb(234, 240, 237);
+}
+.dark-theme{
+    --cssgr1:rgb(33, 27, 27);
+    --cssgr2:rgb(0, 0, 0);
+    --msg:rgb(224, 231, 225);
+    --prasec:rgb(244, 244, 244);
+    --two:rgb(19, 21, 19);
+    --one:rgb(22, 22, 22);
+
+}
+body{
+background-image: url("../../img/home.jpg");
+}
+.section-other{
+    width: 90%;
+    margin: 5px auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+    direction: rtl;
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, var(--cssgr1) 15%, var(--cssgr2) 100%);
+    border-bottom: 5px solid var(--prasec);
+    border-radius: 60px;
+    padding: 30px 20px;
+    
+}
+.textside{
+    text-align: right;
+    direction: ltr;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    align-content: center;
+    width: 50%;
+    justify-content: center;
+}
+.titleside{
+    font-size: 3.6rem;
+    color: var(--msg);
+}
+.praSide{
+    font-size: 1.6rem;
+    transition: 0.3s linear;
+    cursor: pointer;
+    color: var(--prasec);
+
+}
+.praSide:hover{
+    transform: translateX(5px);
+}
+.bxs-leaf{
+    color: rgb(24, 165, 41);
+    direction: ltr;
+    font-size: 22px;
+}
+
+.seimg{
+    width: 220px;
+    border-radius: 50%;
+    box-shadow: -8px 8px 20px 0px rgb(44, 47, 47);
+}
+.two{
+    background: rgb(255,255,255) !important;
+background: linear-gradient(-90deg, var(--one) 15%, var(--two) 100%) !important;
+}
+.linkside{
+    background-color: transparent;
+    border-radius: 20px;
+    border: 3px solid var(--prasec);
+    padding: 5px 12px;
+    margin-top: 20px;
+    color: var(--prasec);
+    font-size: 20px;
+    transition: 0.3s linear;
+}
+.linkside:hover{
+    background-color: #ffff;
+    color: black;
+}
+
+.praIc{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    gap: 15px;
+}
